@@ -1,0 +1,33 @@
+{
+  "name": "hypermile-audit",
+  "version": "0.1.0",
+  "description": "See where your Claude Code tokens actually go. Free local audit — zero network calls, zero telemetry.",
+  "bin": {
+    "hypermile-audit": "bin/run.js"
+  },
+  "files": [
+    "bin/run.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "tokens",
+    "audit",
+    "cli"
+  ],
+  "homepage": "https://hypermile.dev/download?src=npm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianph98/hypermile-audit.git"
+  },
+  "license": "MIT"
+}

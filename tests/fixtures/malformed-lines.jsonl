@@ -1,0 +1,6 @@
+{"type":"user","message":{"role":"user","content":[{"type":"text","text":"This first line is valid JSON."}]}}
+this line is not json at all
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"A valid assistant reply follows a garbage line."}],"usage":{"input_tokens":100,"output_tokens":20}}}
+{"type":"user","message":{"role":"user","content":[{"type":"text","text":"broken object below"
+{"type"::::bad}
+{"type":"user","message":{"role":"user","content":[{"type":"text","text":"Final valid line after two broken ones."}]}}

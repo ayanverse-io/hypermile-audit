@@ -1,0 +1,4 @@
+{"type": "user", "message": {"role": "user", "content": [{"type": "text", "text": "Dispatch a sub-agent to research."}]}}
+{"type": "assistant", "isSidechain": false, "message": {"role": "assistant", "content": [{"type": "text", "text": "Delegating to a sub-agent now."}], "usage": {"input_tokens": 500, "output_tokens": 40, "cache_read_input_tokens": 8000, "cache_creation_input_tokens": 100}}}
+{"type": "assistant", "isSidechain": true, "message": {"role": "assistant", "content": [{"type": "text", "text": "Sub-agent working."}], "usage": {"input_tokens": 300, "output_tokens": 600, "cache_read_input_tokens": 4000, "cache_creation_input_tokens": 50}}}
+{"type": "assistant", "isSidechain": true, "message": {"role": "assistant", "content": [{"type": "text", "text": "Sub-agent done."}], "usage": {"input_tokens": 200, "output_tokens": 300, "cache_read_input_tokens": 2000, "cache_creation_input_tokens": 30}}}

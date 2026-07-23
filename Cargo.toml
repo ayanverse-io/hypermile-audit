@@ -1,0 +1,61 @@
+# hypermile-audit - standalone MIT workspace (extracted from the Hypermile monorepo).
+[workspace]
+resolver = "2"
+members = [".", "crates/hm-core"]
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+anyhow = "1"
+dirs = "5"
+walkdir = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+rust-version = "1.74"
+repository = "https://github.com/adrianph98/hypermile-audit"
+homepage = "https://hypermile.dev"
+authors = ["Hypermile <hello@hypermile.dev>"]
+
+[package]
+name = "hypermile-audit"
+version = "0.1.0"
+description = "See where your Claude Code tokens go - local-only audit CLI (zero network, zero telemetry)."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+readme = "README.md"
+keywords = ["claude", "claude-code", "tokens", "audit", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = ["npm/.bin/**", "target/**"]
+
+[[bin]]
+name = "hypermile-audit"
+path = "src/main.rs"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+hm-core = { path = "crates/hm-core", version = "0.1.0" }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anstyle = "1"
+
+[dev-dependencies]
+assert_cmd = "=2.0.17"
+predicates = "3"
+serde_json = { workspace = true }
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

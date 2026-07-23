@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="512" viewBox="0 0 720 512" font-family="ui-monospace, 'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+  <!-- Real output: hypermile-audit run against the synthetic test fixtures (tests/fixtures). -->
+  <rect width="720" height="512" rx="10" fill="#0e1116"/>
+  <rect width="720" height="36" rx="10" fill="#161b22"/>
+  <rect y="26" width="720" height="10" fill="#161b22"/>
+  <circle cx="22" cy="18" r="5.5" fill="#ff5f57"/>
+  <circle cx="42" cy="18" r="5.5" fill="#febc2e"/>
+  <circle cx="62" cy="18" r="5.5" fill="#28c840"/>
+  <text x="360" y="23" text-anchor="middle" fill="#8b949e" font-size="12">hypermile-audit</text>
+  <g fill="#e6edf3" xml:space="preserve">
+    <text x="24" y="68" font-weight="bold">HYPERMILE AUDIT — last 7 days, 1 project, 8 sessions</text>
+    <text x="24" y="90">Total context processed ....... 102.5K tokens  <tspan fill="#8b949e">(92.6K cache reads)</tspan></text>
+    <text x="24" y="134" font-weight="bold">Where it went:</text>
+    <text x="24" y="156">  <tspan fill="#388bfd">████████░░</tspan>  76%  Bash output                9.0K</text>
+    <text x="24" y="178">  <tspan fill="#388bfd">██░░░░░░░░</tspan>  22%  File reads (Read)          2.7K</text>
+    <text x="24" y="200">  <tspan fill="#388bfd">░░░░░░░░░░</tspan>   0%  Search (Grep/Glob)         17</text>
+    <text x="24" y="222">  <tspan fill="#388bfd">░░░░░░░░░░</tspan>   1%  Model output               134</text>
+    <text x="24" y="244">  <tspan fill="#388bfd">░░░░░░░░░░</tspan>   1%  Your prompts               72</text>
+    <text x="24" y="288" font-weight="bold">Waste found:</text>
+    <text x="24" y="310">  • 60 tokens re-reading the same 1 file  <tspan fill="#8b949e">(top: src/config/big_module.ts ×3)</tspan></text>
+    <text x="24" y="332">  • 7.2K tokens in compressible JSON/log output</text>
+    <text x="24" y="354">  • Top offender: Bash output, 6.7K tokens <tspan fill="#8b949e">(project alpha-web)</tspan></text>
+    <text x="24" y="376">  • Sub-agents drove 7.3% of total burn</text>
+    <text x="24" y="420" fill="#3fb950">Estimated savings with Hypermile: 52–65%  (≈ 4.1 extra days before your weekly cap)</text>
+    <text x="24" y="442">→ Get Hypermile: <tspan fill="#39c5cf">https://hypermile.dev/download?src=audit</tspan></text>
+    <text x="24" y="486" fill="#8b949e">$ <tspan fill="#e6edf3">█</tspan></text>
+  </g>
+</svg>
