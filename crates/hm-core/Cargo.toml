@@ -1,0 +1,20 @@
+[package]
+name = "hm-core"
+version = "0.1.0"
+description = "Claude Code transcript discovery, defensive JSONL parsing, and token attribution."
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+dirs = { workspace = true }
+walkdir = { workspace = true }

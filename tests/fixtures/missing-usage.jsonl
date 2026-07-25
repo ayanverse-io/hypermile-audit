@@ -1,0 +1,4 @@
+{"type":"user","message":{"role":"user","content":[{"type":"text","text":"Run the tests and tell me what fails."}]}}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Running the test suite now."},{"type":"tool_use","id":"toolu_bash_nu","name":"Bash","input":{"command":"cargo test"}}]}}
+{"type":"user","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_bash_nu","content":[{"type":"text","text":"running 3 tests\ntest parse::ok ... ok\ntest parse::empty ... ok\ntest attribute::totals ... ok\ntest result: ok. 3 passed; 0 failed"}]}]}}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"All three tests pass. Nothing is failing."}]}}

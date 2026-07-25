@@ -1,0 +1,3 @@
+{"type":"user","message":{"role":"user","content":"Refactor the parser to be more defensive please."}}
+{"type":"assistant","message":{"role":"assistant","content":"Sure. Here is my plan for making the parser defensive.","usage":{"input_tokens":200,"output_tokens":60,"cache_read_input_tokens":5000,"cache_creation_input_tokens":300}}}
+{"type":"user","message":{"role":"user","content":"Thanks, go ahead and implement it."}}
