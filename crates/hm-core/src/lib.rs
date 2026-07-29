@@ -19,6 +19,7 @@ mod categorize;
 mod discover;
 mod estimate;
 mod model;
+pub mod pricing;
 mod scan;
 mod waste;
 
@@ -34,6 +35,7 @@ use model::TranscriptLine;
 // Re-export the pieces of the model useful to consumers/tests.
 pub use categorize::Category;
 pub use estimate::{estimate_tokens, looks_like_code_or_json};
+pub use pricing::{rates_for_model, usd_for_input_tokens, usd_for_output_tokens, ModelRates};
 pub use waste::{
     BlobKind, BlobSample, HugeOutput, JsonBlobs, LogNoise, NoiseSample, ReadOffender,
     RepeatedReads, SavingsRange, SubAgentShare, WasteReport,
