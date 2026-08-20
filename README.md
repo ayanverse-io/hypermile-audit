@@ -134,4 +134,4 @@ report or HTML file without revealing your directory layout.
 ---
 
 Part of [Hypermile](https://hypermile.dev) — tooling to make Claude Code cheaper
-and faster.
+and faster. [Codex usage: how to check it, what counts, and when it resets](https://hypermile.dev/codex-usage-limits/).
